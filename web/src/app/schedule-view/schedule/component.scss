@@ -2,15 +2,29 @@
   position: absolute;
   height: 100%;
   left: .35em;
-  top:.70em;
+  //top:.70em;
+    border-right: 3px solid white;
 }
 
 .hour-label{
-  color: #777777;
-  font-size: 0.5em;
+  color: #000;
+  font-size: 0.62em;
+  font-weight: normal;
   text-align: right;
   font-variant: small-caps;
+  background: #e4e4e4;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  padding-right: 0.1em;
+  padding-top: 1.5em;
 }
+
+.first-hour-label{
+  background: #e4e4e4;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+}
+
 
 .schedule-grid {
   position: absolute;
@@ -20,12 +34,17 @@
 }
 
 .day-label {
-  color: #777777;
-  display:block;
-  margin: 0 auto;
-  text-align: center;
-  font-size: .8em;
-  font-variant: small-caps;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    //padding: 4px;
+    background: #e4e4e4;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    font-weight: normal;
+    padding-top: 0.15em;
 }
 
 .grid-day {
@@ -43,8 +62,8 @@
 .grid-hour {
   display: block;
   box-sizing: border-box;
-  border-top: 1px solid #e7e7e7;
-  border-right: 1px solid #e7e7e7;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
   //position: relative;
 }
 
@@ -55,11 +74,12 @@
 schedule-event {
   display: block;
   box-sizing: border-box;
-  border-top: 1px solid #e7e7e7!important; //temp fix for the borders not showing
-  border-right: 1px solid #e7e7e7 !important;
+  border-top: 3px solid white!important; //temp fix for the borders not showing
+  border-right: 3px solid white !important;
   position: absolute;
   //height: 20%;
-  width: 20%;
+  width: 19%;
+  color: #ffffff;
 }
 
 .schedule {

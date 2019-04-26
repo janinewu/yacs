@@ -79,13 +79,13 @@ export class ScheduleComponent implements AfterViewInit {
     return this.colorService.getColor(period.section.listing.id).primary;
   }
 
-  public getBorderColor (period: Period) {
-    return this.colorService.getColor(period.section.listing.id).border;
-  }
+  //public getBorderColor (period: Period) {
+  //  return this.colorService.getColor(period.section.listing.id).border;
+  //}
 
-  public getTextColor (period: Period) {
-    return this.colorService.getColor(period.section.listing.id).text;
-  }
+  //public getTextColor (period: Period) {
+  //  return this.colorService.getColor(period.section.listing.id).text;
+  //}
 
   private hourName (minutes: number) {
     const hour = minutes / 60;
@@ -94,7 +94,7 @@ export class ScheduleComponent implements AfterViewInit {
     } else if (hour < 12) {
       return hour + ' AM';
     } else if (hour === 12) {
-      return 'Noon';
+      return '12 PM';
     } else {
       return (hour - 12) + ' PM';
     }
